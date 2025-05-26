@@ -1,39 +1,10 @@
-<h1>NGI Collective Website 🤖</h1>
-<p>The NextGen Inventors Collective website built with Eleventy (a static site generator).</p>
-<h2>🚀 Quick Start</h2>
-<h3>First Time Setup</h3>
-<ol>
-<li><strong>Download the code</strong>: Clone this repository to your computer</li>
-<li><strong>Install tools</strong>: Run <code>npm install</code> in your terminal</li>
-<li><strong>Start coding</strong>: Run <code>npm run dev</code> to see your changes live!</li>
-</ol>
-<h3>Daily Development</h3>
-<ul>
-<li><strong>See your changes</strong>: <code>npm run dev</code> - Opens a local server at <code>http://localhost:8080</code></li>
-<li><strong>Build for production</strong>: <code>npm run build</code> - Creates final files in the <code>docs/</code> folder</li>
-</ul>
-<h2>📁 File Structure</h2>
-<pre><code>├── index.html          # Home page
-├── team.html          # Teams page  
-├── sponsorship.html   # Sponsorship page
-├── header.html        # Navigation menu (shared across pages)
-├── footer.html        # Footer (shared across pages)
-├── head.html          # CSS styles and page setup
-└── docs/              # Built website files (auto-generated)
-</code></pre>
-<h2>✏️ Making Changes</h2>
-<h3>Adding New Pages</h3>
-<ol>
-<li>Create a new <code>.html</code> file (like <code>contact.html</code>)</li>
-<li>Start with this template:</li>
-</ol>
-<pre><code class="language-html">&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;NextGen Inventors Collective&lt;/title&gt;
-  &lt;style&gt;
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGen Inventors Collective</title>
+  <style>
       * {
           box-sizing: border-box;
       }
@@ -116,7 +87,7 @@
           left: 0;
           right: 0;
           bottom: 0;
-          background: url('data:image/svg+xml,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;&lt;defs&gt;&lt;pattern id=&quot;grid&quot; width=&quot;10&quot; height=&quot;10&quot; patternUnits=&quot;userSpaceOnUse&quot;&gt;&lt;path d=&quot;M 10 0 L 0 0 0 10&quot; fill=&quot;none&quot; stroke=&quot;rgba(255,255,255,0.1)&quot; stroke-width=&quot;1&quot;/&gt;&lt;/pattern&gt;&lt;/defs&gt;&lt;rect width=&quot;100&quot; height=&quot;100&quot; fill=&quot;url(%23grid)&quot;/&gt;&lt;/svg&gt;');
+          background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
           opacity: 0.3;
       }
       
@@ -352,61 +323,136 @@
           opacity: 0.9;
           margin: 0.5rem 0 0 0;
       }
-  &lt;/style&gt;
-&lt;/head&gt;
-
-&lt;body class=&quot;page-wrapper&quot;&gt;
-&lt;header&gt;
-  &lt;div class=&quot;header-content&quot;&gt;
-    &lt;h1 class=&quot;logo&quot;&gt;NextGen Inventors Collective&lt;/h1&gt;
-    &lt;nav&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;/team&quot;&gt;Teams&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;/sponsorship&quot;&gt;Sponsorship&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSdRC3vQYeyEeLKkl_2HfrsvzEgLJkl0aeyzyIndKO0JasF9ng/viewform?usp=header&quot; target=&quot;_blank&quot;&gt;Apply&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/nav&gt;
-  &lt;/div&gt;
-&lt;/header&gt;
+  </style>
+</head>
 
 
-&lt;!-- Your page content here --&gt;
+<body class="page-wrapper">
+<header>
+  <div class="header-content">
+    <h1 class="logo">NextGen Inventors Collective</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/team">Teams</a></li>
+        <li><a href="/sponsorship">Sponsorship</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdRC3vQYeyEeLKkl_2HfrsvzEgLJkl0aeyzyIndKO0JasF9ng/viewform?usp=header" target="_blank">Apply</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-&lt;footer&gt;
-  &lt;div class=&quot;footer-content&quot;&gt;
-    &lt;p&gt;&amp;copy; 2024 NextGen Inventors Collective. All rights reserved.&lt;/p&gt;
-    &lt;p&gt;Inspiring the next generation of engineers and innovators through FIRST Robotics.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/footer&gt;
 
-&lt;/html&gt;
-</code></pre>
-<ol start="3">
-<li>Add the page link to <code>header.html</code> navigation</li>
-</ol>
-<h3>Editing Styles</h3>
-<ul>
-<li>All CSS is in <code>head.html</code> between the <code>&lt;style&gt;</code> tags</li>
-<li>Look for existing classes like <code>.hero</code>, <code>.content</code>, <code>.btn</code> before creating new ones</li>
-</ul>
-<h3>Updating Team Info</h3>
-<ul>
-<li>Edit team details in <code>team.html</code></li>
-<li>Update team achievements, member counts, etc.</li>
-</ul>
-<h2>🔧 Commands Explained</h2>
-<ul>
-<li><code>npm run dev</code> = Start development server with live reload</li>
-<li><code>npm run build</code> = Build final website files for deployment</li>
-<li><code>npm install</code> = Download required tools (only needed once)</li>
-</ul>
-<h2>🌐 Deployment</h2>
-<p>The website auto-deploys to GitHub Pages when you push changes to the main branch. Built files go to the <code>docs/</code> folder which GitHub serves as the live website.</p>
-<h2>💡 Tips for New Developers</h2>
-<ul>
-<li><strong>Test locally first</strong>: Always run <code>npm run dev</code> to check your changes</li>
-<li><strong>Save often</strong>: The dev server automatically refreshes when you save files</li>
-<li><strong>Check the console</strong>: Open browser dev tools (F12) to see any errors</li>
-<li><strong>Start small</strong>: Make one change at a time and test it</li>
-</ul>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Our Teams</h1>
+    <p>Meet the talented students and mentors who make up the NextGen Inventors Collective robotics teams.</p>
+    <p>Our teams compete in FIRST programs, building robots and developing skills that will serve them throughout their lives.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-header">
+        <h2 class="team-name">Bussin' Biscuits (FTC)</h2>
+        <p class="team-type">FTC Team #30438</p>
+      </div>
+      <div class="team-content">
+        <p><strong>Founded:</strong> 2025</p>
+        <p><strong>Team Size:</strong> 8 members</p>
+        <p><strong>Achievements:</strong></p>
+        <ul>
+          <li>None yet, it's our first season!</li>
+        </ul>
+        <p><strong>Current Challenge:</strong> DECODE presented by RTX</p>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-header">
+        <h2 class="team-name">Bussin' Biscuits (FLL)</h2>
+        <p class="team-type">FLL Team #53020</p>
+      </div>
+      <div class="team-content">
+        <p><strong>Founded:</strong> 2021</p>
+        <p><strong>Team Size:</strong> 4 members</p>
+        <p><strong>Achievements:</strong></p>
+        <ul>
+          <li>Rising All-Stars (2021)</li>
+          <li>Judges' Award (2022)</li>
+          <li>Regional Qualifier Finalists (2021-2025)</li>
+        </ul>
+        <p><strong>Current Challenge:</strong> UNEARTHED</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="content" style="margin-top: 3rem; text-align: center;">
+    <h2>🌟 What Makes Our Teams Special</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+      <div>
+        <h3>🔧 Scrappy Attitude, Big Vision</h3>
+        <p>Each season's team operates like a small startup, with each member leading their part of planning and execution.</p>
+      </div>
+      <div>
+        <h3>🤝 Teamwork & Leadership</h3>
+        <p>Every member contributes unique skills to build themselves and each other up year over year.</p>
+      </div>
+      <div>
+        <h3>🏆 Competition Excellence</h3>
+        <p>Teams compete at regional and state levels, with opportunities to advance to world championships.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" style="margin-top: 2rem;">
+    <h2>💼 Team Roles & Skills</h2>
+    <p>Our teams are structured to provide diverse learning opportunities:</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+      <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+        <h4>🔩 Mechanical Engineering</h4>
+        <p>Design and build robot chassis, mechanisms, and moving parts</p>
+      </div>
+      <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+        <h4>💻 Programming</h4>
+        <p>Code autonomous routines, sensor integration, and driver controls</p>
+      </div>
+      <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+        <h4>⚡ Electrical</h4>
+        <p>Wire motors, sensors, and control systems safely and efficiently</p>
+      </div>
+      <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+        <h4>📊 Strategy & Scouting</h4>
+        <p>Analyze competition data and develop winning game strategies</p>
+      </div>
+      <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+        <h4>🎨 Design & CAD</h4>
+        <p>Create 3D models, prototypes, and technical documentation</p>
+      </div>
+      <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+        <h4>📢 Outreach & Marketing</h4>
+        <p>Community engagement, social media, and team presentation</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" style="margin-top: 2rem; text-align: center;">
+    <h2>🚀 Join Our Teams</h2>
+    <p>Interested in robotics? We welcome students of all skill levels and backgrounds.</p>
+    <p>No prior experience necessary - just bring curiosity and enthusiasm!</p>
+    <div style="margin-top: 2rem;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRC3vQYeyEeLKkl_2HfrsvzEgLJkl0aeyzyIndKO0JasF9ng/viewform?usp=header" class="btn" target="_blank">Apply to Join</a>
+      <a href="/sponsorship" class="btn secondary">Support Our Teams</a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2024 NextGen Inventors Collective. All rights reserved.</p>
+    <p>Inspiring the next generation of engineers and innovators through FIRST Robotics.</p>
+  </div>
+</footer>
+
+</html>

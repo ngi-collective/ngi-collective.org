@@ -2,26 +2,43 @@
 <html>
 {% include "head.html" %}
 
-<body>
+<body class="page-wrapper">
 {% include "header.html" %}
 
 <section class="hero">
-  <h1>Make a Local Difference</h1>
-  <p>The NGI collective is a community hobby organization centered around FIRST robotics teams in the central North Carolina region.</p>
-  <p>Contributing to the NGIC helps our teams purchase or replace equipment, travel to and from competitions, and explore new engineering avenues.</p>
-  <p>A donation will get your name and logo on team equipment and uniforms, putting them in front of engineering-minded families and individuals in North Carolina.</p>
-  <a href="https://collect.crowded.me/collection/ce040e8c-2e9e-4eaa-bdd8-4c23144020af" class="btn">Donate Now</a>
+  <div class="hero-content">
+    <h1>Make a Local Difference</h1>
+    <p>The NGI collective is a community hobby organization centered around FIRST robotics teams in the central North Carolina region.</p>
+    <p>Contributing to the NGIC helps our teams purchase or replace equipment, travel to and from competitions, and explore new engineering avenues.</p>
+    <p>A donation will get your name and logo on team equipment and uniforms, putting them in front of engineering-minded families and individuals in North Carolina.</p>
+    <a href="https://collect.crowded.me/collection/ce040e8c-2e9e-4eaa-bdd8-4c23144020af" class="btn">Donate Now</a>
+    <a href="/sponsorship" class="btn secondary">View Sponsorship Tiers</a>
+  </div>
 </section>
+
 <div class="container">
-  <section class="content">
-    <h2>FTC</h2>
-    <p>NGIC runs one FTC team every season.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRC3vQYeyEeLKkl_2HfrsvzEgLJkl0aeyzyIndKO0JasF9ng/viewform?usp=header" class="btn">Apply Here</a>
-  </section>
-  <section class="content">
-    <h2>FLL Registration</h2>
-    <p>Coming soon.</p>
-  </section>
+  <div class="content-grid">
+    <section class="content">
+      <h2>🤖 FTC Program</h2>
+      <p>NGIC runs competitive FTC (FIRST Tech Challenge) teams every season. Our students design, build, and program robots to compete in exciting challenges while learning valuable STEM and teamwork skills.</p>
+      <p>Teams compete regionally and have opportunities to advance to state and world championships.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRC3vQYeyEeLKkl_2HfrsvzEgLJkl0aeyzyIndKO0JasF9ng/viewform?usp=header" class="btn">Apply Here</a>
+    </section>
+    
+    <section class="content">
+      <h2>🏗️ FLL Program</h2>
+      <p>Our FLL (FIRST LEGO League) program introduces younger students to robotics and programming using LEGO Mindstorms technology.</p>
+      <p>Registration for the upcoming season will open soon. Stay tuned for updates!</p>
+      <a href="#" class="btn" style="opacity: 0.6; cursor: not-allowed;">Coming Soon</a>
+    </section>
+    
+    <section class="content">
+      <h2>🎯 Our Mission</h2>
+      <p>We believe in hands-on learning that combines science, technology, engineering, and mathematics with real-world applications.</p>
+      <p>Our programs build confidence, leadership skills, and prepare students for future careers in STEM fields.</p>
+      <a href="/team" class="btn">Meet Our Teams</a>
+    </section>
+  </div>
 </div>
 
 {% include "footer.html" %}
